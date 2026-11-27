@@ -1,0 +1,243 @@
+
+/* CSS EKSTERNAL - BALLADEER ROYAL COQUETTE */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0; font-family: Arial, Helvetica, sans-serif;
+  background: #101827; color: #dbe5ee; line-height: 1.6;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #101827, #263d5a);
+  color: #edf4f8; padding: 0 7%;
+  border-bottom: 3px double #729baf;
+}
+
+.navbar {
+  max-width: 1100px; margin: auto; min-height: 72px;
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+}
+
+.brand {
+  color: #edf4f8; text-decoration: none;
+  font-weight: bold; font-size: 18px;
+}
+
+.brand::before { content: "୨୧ "; color: #8fc8ca; }
+
+.back-link {
+  color: #d5e4ed; text-decoration: none; font-size: 14px;
+}
+
+.back-link::after { content: " ✧"; color: #8fc8ca; }
+
+.back-link:hover, .footer a:hover { text-decoration: underline; }
+
+.hero {
+  max-width: 850px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 65px 20px 75px;
+  position: relative;
+
+  background-color: #17243a;
+  background-image:
+    linear-gradient(
+      rgba(16, 24, 39, 0.48),
+      rgba(27, 48, 70, 0.60)
+    ),
+    url("Wawan.png");
+
+  background-size: cover, auto 100%;
+  background-position: center, right center;
+  background-repeat: no-repeat;
+
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid #668da5;
+
+  box-shadow:
+    0 8px 25px rgba(3, 12, 25, 0.18),
+    inset 0 0 20px rgba(143, 200, 202, 0.08);
+}
+
+.hero::before {
+  content: "✧  ♡  ୨୧  ♡  ✧";
+  display: block;
+  color: #a6d5d5;
+  font-size: 19px;
+  margin-bottom: 14px;
+  letter-spacing: 5px;
+}
+
+.eyebrow {
+  display: inline-block; color: #a6d5d5;
+  font-size: 12px; font-weight: bold;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+.eyebrow::before { content: "✧･ﾟ: "; }
+.eyebrow::after { content: " :ﾟ･✧"; }
+
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.15;
+}
+
+.hero p {
+  max-width: 650px; margin: auto;
+  color: #e0eaf0; font-size: 16px;
+}
+
+.container { width: min(1100px, 90%); margin: 0 auto; }
+
+.intro { text-align: center; padding: 48px 10px 28px; }
+
+.intro h2 {
+  margin: 0 0 8px; color: #b8d8e5; font-size: 27px;
+}
+
+.intro h2::after { content: "  ୨୧"; color: #8fc8ca; }
+
+.intro p { max-width: 650px; margin: auto; color: #9aafbf; }
+
+.project-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px; padding: 15px 0 45px;
+}
+
+.project-card {
+  background: #1b293b; border: 1px solid #405d78;
+  border-radius: 15px; overflow: hidden;
+  box-shadow: 0 5px 18px rgba(3, 12, 25, .25);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(3, 12, 25, .40);
+}
+
+.project-visual {
+  min-height: 145px; display: flex;
+  justify-content: center; align-items: center;
+  position: relative;
+  border-bottom: 1px dashed #54788c;
+}
+
+.project-visual::before {
+  content: "୨୧";
+  position: absolute;
+  top: 8px; left: 13px;
+  color: #8fc8ca;
+  font-size: 20px;
+}
+
+.project-visual::after {
+  content: "✧  ♡  ✧";
+  position: absolute;
+  bottom: 7px; right: 13px;
+  color: #b66e79;
+  font-size: 13px;
+}
+
+.project-visual span { font-size: 55px; }
+
+.visual-blue { background: #243b59; }
+.visual-green { background: #203c42; }
+.visual-purple { background: #302c4d; }
+.visual-orange { background: #49303b; }
+.visual-pink { background: #422d42; }
+.visual-teal { background: #1d4149; }
+.visual-yellow { background: #414039; }
+.visual-slate { background: #29364a; }
+
+.project-content { padding: 21px; }
+
+.category {
+  color: #8fc8ca; font-size: 11px; font-weight: bold;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+
+.category::before { content: "✧ "; color: #b66e79; }
+
+.project-content h3 {
+  margin: 7px 0; color: #e0eaf0; font-size: 20px;
+}
+
+.project-content h3::after {
+  content: " ♡"; color: #8fc8ca; font-size: 13px;
+}
+
+.project-content p {
+  color: #9aafbf; font-size: 14px; margin: 0 0 15px;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 18px; }
+
+.tags span {
+  background: #263b50; color: #d5e4ed;
+  border: 1px solid #496a80;
+  padding: 5px 9px; border-radius: 20px;
+  font-size: 11px; font-weight: bold;
+}
+
+.project-link {
+  display: inline-block; color: #8fc8ca;
+  font-size: 14px; font-weight: bold; text-decoration: none;
+}
+
+.project-link::after { content: " ♡"; color: #b66e79; }
+
+.project-link:hover { color: #d5e4ed; text-decoration: underline; }
+
+.note {
+  background: #1b293b; border: 1px solid #405d78;
+  border-radius: 15px; padding: 28px; text-align: center;
+  margin: 5px 0 45px;
+  position: relative;
+}
+
+.note::before {
+  content: "୨୧  ✧  ୨୧";
+  display: block; color: #8fc8ca;
+  margin-bottom: 8px; letter-spacing: 4px;
+}
+
+.note h2 { margin: 0 0 8px; color: #b8d8e5; }
+.note p { color: #9aafbf; margin: 0; }
+
+.footer {
+  background: #101827; color: #d5e4ed;
+  text-align: center; padding: 25px 15px; font-size: 13px;
+  border-top: 3px double #729baf;
+}
+
+.footer p { margin: 0 0 7px; }
+.footer a { color: #8fc8ca; text-decoration: none; }
+
+.footer p:last-child::after {
+  content: "  ✧  ୨୧  ♡";
+  color: #b66e79;
+}
+
+@media (max-width: 650px) {
+  .site-header { padding: 0 5%; }
+  .navbar { min-height: 65px; }
+  .brand { font-size: 15px; }
+  .back-link { font-size: 12px; }
+
+  .hero {
+    padding: 48px 5px 55px;
+    background-size: cover, auto 100%;
+    background-position: center, right center;
+  }
+
+  .hero p { font-size: 14px; }
+  .container { width: 92%; }
+  .project-grid { grid-template-columns: 1fr; gap: 17px; }
+  .project-visual { min-height: 125px; }
+  .intro { padding-top: 35px; }
+}
